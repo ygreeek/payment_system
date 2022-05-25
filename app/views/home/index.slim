@@ -1,0 +1,7 @@
+- unless signed_in?
+  div
+    = button_to('Sign in as admin', new_admin_session_path, class: 'btn btn-primary', method: :get)
+  div
+    = button_to('Sign in as merchant', new_merchant_session_path, class: 'btn btn-primary', method: :get)
+
+/ ....

@@ -1,0 +1,16 @@
+table.table
+  tr
+    th uuid
+    th amount
+    th status
+    th customer email
+    th customer phone
+
+  - transactions.each do |transaction|
+    tr
+      td= transaction.id
+      td= transaction.amount
+      td= transaction.status
+      td= transaction.customer_email
+      td= transaction.customer_phone
+
